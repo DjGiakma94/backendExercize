@@ -6,7 +6,6 @@ const app = express()
 
 app.get('/api/:date?', (req, res) => {
     const { date } = req.params
-    console.log(date);
 
     //verify if the date is correct
     if (Number.isInteger(Number(date)) === true) {
